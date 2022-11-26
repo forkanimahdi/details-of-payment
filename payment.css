@@ -1,0 +1,290 @@
+body{
+    margin: 0;
+    font-family: Space Grotesk;
+}
+.mobile-back{
+    display: none;
+}
+.desk-back{
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.frontcard{
+    width: 100%;
+
+}
+.frc{
+    height: 30%;
+    width: 25%;
+    position: absolute;
+    top: 20%;
+    left: 14%;
+}
+
+.cardlogo{
+    width: 18%;
+    position: absolute;
+    top:13%;
+    left: 6%; 
+}
+#cardnumbsim{
+    letter-spacing: 3px;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    font-weight: 400;
+}
+#cardholdersim{
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: 70%;
+    left: 11%;
+    font-weight: 400; 
+    text-transform: uppercase; 
+ 
+}
+#cardexpsim{
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: 70%;
+    left: 81%;
+    font-weight: 400;  
+}
+.container{
+    position: absolute;
+    top:15%;
+    left: 50%;
+    width: 30%;
+    height: 60%;
+}
+.backcard{
+    width: 100%;
+}
+.bkc{
+    width: 25%;
+    height: 30%;
+    position: absolute;
+    top: 55%;
+    left: 20%;
+}
+#cvcsim{
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 37%;
+    left: 78%;
+    font-weight: 400;   
+}
+#cardholder{
+    position: absolute;
+    top: 18%;
+    left: 10%;
+    height: 30px;
+    width: 80%;
+    border:  2px solid gray;
+    border-radius: 7px;
+    text-transform: uppercase;
+}
+::placeholder{
+    font-family: Space Grotesk;
+font-size: 14px;
+}
+input:focus{
+    outline-color: hsla(278, 93%, 30%, 0.726)
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+}
+#cardnumber{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    height: 30px;
+    width: 80%;
+    border:  2px solid gray;
+    border-radius: 7px;
+    text-transform: uppercase;
+}
+#month{
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    height: 30px;
+    width: 15%;
+    border:  2px solid gray;
+    border-radius: 7px;
+    text-transform: uppercase;
+}
+#year{
+    position: absolute;
+    top: 65%;
+    left: 30%;
+    height: 30px;
+    width: 15%;
+    border:  2px solid gray;
+    border-radius: 7px;
+    text-transform: uppercase;
+}
+#cvc{
+    position: absolute;
+    top: 65%;
+    left: 70%;
+    height: 30px;
+    width: 20%;
+    border:  2px solid gray;
+    border-radius: 7px;
+}
+.confirm{
+position: absolute;
+top: 85%;
+left: 10%;
+height: 12%;
+width: 84%;
+color: white;
+background-color: hsl(278, 68%, 11%);
+border: none;
+border-radius: 8px;
+}
+.confirm:hover{
+    background-color: hsl(279, 6%, 55%);
+}
+.cht{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
+.cnt{
+    position: absolute;
+    top: 28%;
+    left: 10%;
+}
+.ext{
+    position: absolute;
+    top: 53%;
+    left: 10%;
+}
+.cvct{
+    position: absolute;
+    top: 53%;
+    left: 70%;
+}
+#wrn{
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    font-size: 12px;
+    color: hsl(0, 100%, 50%);
+    display: none;
+}
+#exw{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    font-size: 12px;
+    color: hsl(0, 100%, 50%);
+display: none;
+}
+#cvcw{
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    font-size: 12px;
+    color: hsl(0, 100%, 50%);
+display: none;
+}
+.thankyou{
+    position: absolute;
+    top:15%;
+    left: 50%;
+    width: 30%;
+    height: 60%;
+    display: none;
+}
+.completed{
+position: absolute;
+top: 25%;
+left: 38%;
+}
+.thanking{
+    position: absolute;
+    top: 50%;
+    left: 28%;
+    text-transform: uppercase; 
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.cadded{
+    position: absolute;
+    top: 65%;
+    left: 20%;
+}
+#continue{
+    position: absolute;
+    top: 85%;
+    left: 10%;
+    height: 12%;
+    width: 84%;
+    color: white;
+    background-color: hsl(278, 68%, 11%);
+    border: none;
+    border-radius: 8px;
+    }
+    #continue:hover{
+        background-color: hsl(279, 6%, 55%);
+    }
+    @media(max-width:450px){
+        body{
+            width: 100%;
+        }
+.desk-back{
+    display: none;
+}
+.mobile-back{
+    display: initial;
+    height: 0%;
+    width: 100%;
+    
+}
+.container{
+    width: 100%;
+    left: 0;
+    top: 38%;
+}
+.bkc{
+    width: 85%;
+    top: 1%;
+    left:11% ;
+}
+
+.frc{
+    width: 80%;
+    left: 5%;
+    top: 15%;
+}
+#cardnumbsim{
+    top: 30%;
+}
+#cardholdersim{
+    top: 55%;
+}
+#cardexpsim{
+    top: 55%;
+}
+#cvcsim{
+    top: 30%;
+    
+}
+.thankyou{
+    width: 100%;
+    left: 0;
+    top: 30%;
+}
+    }

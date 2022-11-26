@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" >
+    <title>Payment</title>
+</head>
+<body>
+    <img class="mobile-back" src="images/bg-main-mobile.png" alt="">
+  <img class="desk-back" src="images/bg-main-desktop.png" alt="" srcset="">
+  <div class="bkc">
+    <img src="images/bg-card-back.png" alt="" class="backcard">
+<h1 id="cvcsim">000</h1>
+  </div>
+  <div class="frc">
+    <img src="images/bg-card-front.png" alt="" class="frontcard">
+    <img class="cardlogo" src="images/card-logo.svg" alt="">
+    <h1 id="cardnumbsim">XXXX XXXX XXXX XXXX</h1>
+<h1 id="cardholdersim">MR. LASTNAME FIRSTNAME</h1>
+<h1 id="cardexpsim"><span id="monthsim">07</span>/<span id="yearsim">30</span></h1>
+  </div>
+ 
+<div class="container">
+<h5 class="cht">Cardholder Name</h5>
+<input autocomplete="off" type="text" name="" id="cardholder" placeholder="  e.g. Jane Appleseed" required>
+<h5 class="cnt">Card Number</h5>
+<input autocomplete="off" type="number"  name="" id="cardnumber" placeholder="  e.g. 1234 5678 9123 0000"  maxlength="16" minlength="16"  oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);cardfunction()" required>
+<h5 id="wrn">Wrong format. Numbers only</h5>
+<h5 class="ext">Exp. Date (MM/YY)</h5>
+<input type="number"  name="" id="month" placeholder=" MM" maxlength="2" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);cardfunction()" required max="12"  >
+<input type="number"  name="" id="year" placeholder=" YY" maxlength="2" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);cardfunction()" required>
+<h5 class="cvct">CVC</h5>
+<input type="number"  name="" id="cvc" placeholder="  e.g. 123" maxlength="3"  oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);cardfunction()"  >
+<h5 id="exw">Can't be blank</h5>
+<h5 id="cvcw">Can't be blank</h5>
+<input type="submit" value="Confirm" class="confirm" onclick="confirming()">
+</div>
+<div class="thankyou">
+<img class="completed" src="images/icon-complete.svg" alt="">
+<h2 class="thanking">Thank you!</h2>
+<p class="cadded">We've added your card details</p>
+<button id="continue">Continue</button>
+</div>
+   <!--- <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </div>-->
+    <script src="payment.js"></script>
+</body>
+</html>
